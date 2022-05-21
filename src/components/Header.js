@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Container } from "react-bootstrap";
-import logo from "file:///G:/react/pokemons/src/assets/pokeapi.png";
+import logo from "../assets/pokeapi.png";
 import Input from "./Forms/Input";
 import Select from "./Forms/Select";
 

@@ -2,8 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import s from "./../CardList/CardList.module.scss";
-import defaultImage from "file:///G:/react/pokemons/src/assets/default.png";
-import { colors } from "../../utils";
+import defaultImage from "./../../assets/default.png";
 import { randomColor } from "../../utils";
 
 function CardList({ pokemons }) {
