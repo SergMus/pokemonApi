@@ -1,0 +1,23 @@
+
+.wrapperList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    .pokemonCard{
+        padding: 10px 20px;
+        margin: 20px;
+        box-shadow: 8px 8px 24px 0px rgb(145, 147, 165);
+        color: aliceblue;
+        font-weight: 600;
+        border-radius: 5px;
+        letter-spacing: 2px;
+        transition: .1s ease;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+}

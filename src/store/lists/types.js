@@ -1,0 +1,3 @@
+export const SET_POKEMON_LIST = "SET_POKEMON_LIST";
+export const SET_TYPES_LIST = "SET_TYPES_LIST";
+
