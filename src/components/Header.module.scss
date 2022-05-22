@@ -1,6 +1,17 @@
 .navbar {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: end;
     margin: 10px 0;
+    @media screen and (max-width: 768px){
+        flex-wrap: wrap;
+    }
+
+    .form {
+        margin-right: 50px;
+        @media screen and (max-width: 768px){
+            margin: 20px 50px 5px 0;
+        }
+
+    }
 }
