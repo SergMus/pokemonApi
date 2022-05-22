@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Homepage from "./pages/Homepage/Homepage";
 import PokemonPage from "./pages/PokemonPage/PokemonPage";
 import Header from "./components/Header";

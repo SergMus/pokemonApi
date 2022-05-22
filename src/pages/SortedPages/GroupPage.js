@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Container, ListGroup, Badge } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
+
 import Loader from "../../components/Loader";
 import { setGroupedTypesList } from "../../store/sorts/actions";
 import { randomColor } from "../../utils";

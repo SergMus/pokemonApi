@@ -1,8 +1,9 @@
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import thunk from "redux-thunk";
+
 import listsReducer from "./lists/reducer";
 import loaderReducer from "./loader/reducer";
-import sizeReducer from './size/reducer';
+import sizeReducer from "./size/reducer";
 import sortsReducer from "./sorts/reducer";
 
 

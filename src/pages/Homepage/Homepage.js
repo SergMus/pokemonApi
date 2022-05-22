@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import { Container, Row, Button } from "react-bootstrap";
+import { connect } from "react-redux";
+
 import Loader from "../../components/Loader";
 import CardList from "../../components/CardList/CardList";
-import { connect } from "react-redux";
 import { setPokemonsList } from "../../store/lists";
 import { increaseNumber, decreaseNumber } from "../../store/size";
+
 import s from "./../Homepage/Homepage.module.scss";
 
 function Homepage({

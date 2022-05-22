@@ -1,14 +1,15 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import s from './../Header.module.scss'
+
+import s from "./../Header.module.scss";
 
 export default function Select() {
-  let history = useNavigate();
+  const history = useNavigate();
 
   const selectHandle = (e)=>{
-    history(`/${e.target.value}`)
-  }
+    history(`/${e.target.value}`);
+  };
 
   return (
     <Form.Select
@@ -17,7 +18,7 @@ export default function Select() {
       onChange={selectHandle}
       className={s.form}
     >
-      <option value=''>Choose option</option>
+      <option value="">Choose option</option>
       <option value="desc">Sort by alphabet</option>
       <option value="group">Sort by type</option>
     </Form.Select>

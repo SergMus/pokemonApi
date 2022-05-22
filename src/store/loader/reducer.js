@@ -7,18 +7,18 @@ const initialState = {
 const loaderReducer = (state = initialState, action) => {
   const { type } = action;
   switch (type) {
-    case LOADER_ON:
-      return {
-        ...state,
-        loading: true,
-      };
-    case LOADER_OFF:
-      return {
-        ...state,
-        loading: false,
-      };
-    default:
-      return state;
+  case LOADER_ON:
+    return {
+      ...state,
+      loading: true,
+    };
+  case LOADER_OFF:
+    return {
+      ...state,
+      loading: false,
+    };
+  default:
+    return state;
   }
 };
 

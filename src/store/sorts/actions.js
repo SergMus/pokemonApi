@@ -1,6 +1,8 @@
 import axios from "axios";
-import * as types from "./types";
+
 import { loaderOn, loaderOff } from "../loader/actions";
+
+import * as types from "./types";
 
 // lists and grouping pokemon types
 

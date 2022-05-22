@@ -1,9 +1,13 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
+import { randomColor } from "../../utils";
+
 import s from "./../CardList/CardList.module.scss";
 import defaultImage from "./../../assets/default.png";
-import { randomColor } from "../../utils";
+
+
 
 function CardList({ pokemons }) {
  

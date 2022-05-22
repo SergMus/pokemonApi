@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Form, FormControl, Button } from "react-bootstrap";
 import { useDispatch } from "react-redux";
-import { setInputList } from "../../store/lists";
 import { useNavigate } from "react-router-dom";
+
+import { setInputList } from "../../store/lists";
+
 
 export default function Input() {
   const [text, setText] = useState("");

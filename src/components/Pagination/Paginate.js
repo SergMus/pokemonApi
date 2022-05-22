@@ -6,7 +6,7 @@ const Paginate = ({
   itemsPerPage,
   currentPage,
   setCurrentPage,
-  alwaysShown = true
+  alwaysShown = true,
 }) => {
   const pagesCount = Math.ceil(itemsCount / itemsPerPage);
   const isPaginationShown = alwaysShown ? true : pagesCount > 1;

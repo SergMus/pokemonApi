@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Card, Row, Col, Badge, ListGroup, Image } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+
+import Paginate from "../../components/Pagination/Paginate";
+
 import Loader from "./../../components/Loader";
 import s from "./../PokemonPage/PokemonPage.module.scss";
-import Paginate from "../../components/Pagination/Paginate";
 
 export default function PokemonPage() {
   const [pokemonDetails, setPokemonDetails] = useState();
@@ -12,7 +14,7 @@ export default function PokemonPage() {
   const [itemsPerPage] = useState(5);
   const [currentPage, setCurrentPage] = useState(1);
 
-  let { id } = useParams();
+  const { id } = useParams();
 
   const getPokemon = async (id) => {
     const details = await getPokemonData(id);

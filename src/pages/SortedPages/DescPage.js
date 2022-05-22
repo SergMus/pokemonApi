@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
+
 import Loader from "../../components/Loader";
 import Paginate from "../../components/Pagination/Paginate";
 import { setSortedTypesList } from "../../store/sorts/actions";
-import s from './../SortedPages/DescPage.module.scss';
-import {randomColorCSS} from './../../utils';
+
+import s from "./../SortedPages/DescPage.module.scss";
+import {randomColorCSS} from "./../../utils";
 
 function DescPage() {
   const dispatch = useDispatch();
