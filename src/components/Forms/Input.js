@@ -22,7 +22,7 @@ export default function Input() {
   };
 
   return (
-    <Form className="d-flex">
+    <Form className="d-flex me-2">
       <FormControl
         type="search"
         placeholder="Find your Pokemon"

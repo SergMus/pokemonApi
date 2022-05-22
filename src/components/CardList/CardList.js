@@ -17,6 +17,7 @@ function CardList({ pokemons }) {
             key={i}
             text={"white"}
             className={[s.card, s["m-5"]].join(" ")}
+            
           >
             <Link to={`/pokemon/${pokemon.id}`}>
               <Card.Title>{pokemon.name}</Card.Title>

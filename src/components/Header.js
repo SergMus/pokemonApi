@@ -1,14 +1,14 @@
 import React from "react";
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/pokeapi.png";
 import Input from "./Forms/Input";
 import Select from "./Forms/Select";
+import s from './Header.module.scss'
 
 export default function Header() {
-
   return (
-    <header>
-      <Navbar bg="dark" variant="dark">
+    <header >
+      <Navbar bg="dark" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand href="/">
             <img
@@ -20,8 +20,10 @@ export default function Header() {
             />
             {`   React App`}
           </Navbar.Brand>
-          <Input />
-          <Select />
+          <div className={s.navbar}>
+            <Input />
+            <Select />
+          </div>
         </Container>
       </Navbar>
     </header>

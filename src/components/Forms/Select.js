@@ -12,7 +12,6 @@ export default function Select() {
   return (
     <Form.Select
       aria-label="Default select example"
-      className="mx-5"
       style={{ maxWidth: "200px" }}
       onChange={selectHandle}
     >

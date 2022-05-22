@@ -5,6 +5,7 @@ import CardList from "../../components/CardList/CardList";
 import { connect } from "react-redux";
 import { setPokemonsList } from "../../store/lists";
 import { increaseNumber, decreaseNumber } from "../../store/size";
+import s from "./../Homepage/Homepage.module.scss";
 
 function Homepage({
   lists,
@@ -14,7 +15,6 @@ function Homepage({
   decreaseSize,
   getPokemonsList,
 }) {
-
   const loadMore = () => {
     increaseSize(perPage);
   };
@@ -23,7 +23,6 @@ function Homepage({
     if (perPage <= 21) return;
     decreaseSize(perPage);
   };
-
 
   useEffect(() => {
     getPokemonsList(perPage);
@@ -34,8 +33,8 @@ function Homepage({
       {loading ? (
         <Loader />
       ) : (
-        <Container>
-          <Row className="mt-2">
+        <Container className={s.container}>
+          <Row className={s.row}>
             <CardList pokemons={lists} />
           </Row>
           <div className="d-flex justify-content-center m-4">
