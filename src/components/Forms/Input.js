@@ -16,7 +16,7 @@ export default function Input() {
   };
 
   const btnHandler = () => {
-    dispatch(setInputList(text));
+    dispatch(setInputList(text.toLowerCase()));
     setText("");
     history("");
   };
